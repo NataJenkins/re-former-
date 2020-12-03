@@ -1,6 +1,6 @@
 <%= form_for @user do |f| %>
     <% @user.errors.full_messages.each do |error| %>
-      <strong><%= error %></strong>
+      <strong><%= error %></strong><br />
     <% end %>
 
     <%= f.label :email, 'Your Email:' %>
