@@ -1,9 +1,9 @@
 <%= form_with(url: "/users", method: "post") do  %>
     <%= label_tag(:email, "Email:") %>
-    <input type="email" name="user[email]" >
+    <%= email_field(:user, :email )%>
     <%= label_tag(:username, "Username:") %>
-    <input type="text" name="user[username]" >
+    <%= text_field(:user, :username) %>
     <%= label_tag(:password, "Password:") %>
-    <input type="password" name="user[password]" >
+    <%= password_field(:user, :password) %>
     <%= submit_tag("Sign up") %>
 <% end %>
