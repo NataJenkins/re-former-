@@ -1,34 +1,37 @@
 * {
-    font-weight: bold;
+  font-weight: bold;
 }
+
 form {
-    width: 50vw;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 50vh;
-    transform: translateY(-80%);
+  width: 50vw;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 50vh;
+  transform: translateY(-80%);
 }
+
 label {
-    display: block;
-    text-transform: capitalize;
-    font-size: 12px;
+  display: block;
+  text-transform: capitalize;
+  font-size: 12px;
 }
+
 input {
-    border: none;
-    border-radius: 5px;
-    background-color: #f3f5f7;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #f3f5f7;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+  width: 100%;
 }
 
 input[type=submit] {
-    background-color: #1155dd;
-    color: white;
-    width: calc(100% + 20px);
-    margin-top: 20px;
+  background-color: #15d;
+  color: white;
+  width: calc(100% + 20px);
+  margin-top: 20px;
 }
 
 strong {
-    color: red;
+  color: red;
 }
