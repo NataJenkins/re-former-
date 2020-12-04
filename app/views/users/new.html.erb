@@ -1,0 +1,34 @@
+<%= form_for @user do |f| %>
+  <% @user.errors.full_messages.each do |error| %>
+    <strong><%= error %></strong><br />
+  <% end %>  
+  <%= f.label :email, 'Your Email:' %>
+  <%= f.email_field :email, placeholder: "email@email.com" %><br />
+  <%= f.label :username, 'Your Username:' %>
+  <%= f.text_field :username, placeholder: "username" %><br />
+  <%= f.label :password, 'Your Password:' %>
+  <%= f.password_field :password, placeholder: "password" %><br />
+  <%= f.submit %>
+<% end %>
+
+# <form action="<%= users_path %>" method="post" accept-charset="UTF-8">
+#   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+#   <label for="user[email]">Email:</label>
+#   <input type="email" name="user[email]">
+#   <label for="user[username]">Username:</label>
+#   <input type="text" name="user[username]" >
+#   <label for="user[password]">Password:</label>
+#   <input type="password" name="user[password]" >
+#   <%= submit_tag("Sign up") %>
+# </form>
+
+# <%= form_tag(users_path, :method => "post") do  %>
+#   <%= label_tag(:email, "Email:") %>
+#   <%= email_field_tag(:user, :email )%>
+#   <%= label_tag(:username, "Username:") %>
+#   <%= text_field_tag(:user, :username) %>
+#   <%= label_tag(:password, "Password:") %>
+#   <%= password_field_tag(:user, :password) %>
+#   <%= submit_tag("Sign up") %>
+# <% end %>
+  
